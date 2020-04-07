@@ -7,3 +7,10 @@ body {
   padding: 40px 15px;
   text-align: center;
 }
+
+.avatar {
+  vertical-align: middle;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+}
