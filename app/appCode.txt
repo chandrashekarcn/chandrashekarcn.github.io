@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+	<WebView
+		android:id="@+id/webview"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+	/>
+</LinearLayout>
+
+
+
+
+
+	<uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+		android:resizeableActivity = "true">
+        <activity
+            android:name=".MainActivity"
+			android:screenOrientation="landscape"
+            android:label="@string/app_name" 
+        	android:theme="@android:style/Theme.NoTitleBar.Fullscreen"	android:autoRemoveFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+
+
+
+
+
+
+import android.app.*;
+import android.os.*;
+import android.webkit.*;
+import android.widget.Toast;  
+
+public class MainActivity extends Activity 
+{
+@Override
+protected void onCreate(Bundle savedInstanceState)
+{
+super.onCreate(savedInstanceState);
+setContentView(R.layout.main);
+WebView myWebView = findViewById(R.id.webview);
+WebViewClient MyWebViewClient = null;
+myWebView.setWebViewClient(MyWebViewClient);
+myWebView.loadUrl("https://chandrashekarcn.github.in");
+WebSettings webSettings = myWebView.getSettings();
+webSettings.setJavaScriptEnabled(true);
+Toast.makeText(getApplicationContext(),"Welcome Chandrashekar CN",Toast.LENGTH_LONG).show();  
+}
+private long backPressedTime;
+private Toast backToast;
+@Override
+public void onBackPressed() {
+if (backPressedTime + 2000 > System.currentTimeMillis()) {
+backToast.cancel();
+super.onBackPressed();
+return;
+} else {
+backToast = Toast.makeText(getBaseContext(), "Press back again to exit", Toast.LENGTH_SHORT);
+backToast.show();
+}
+backPressedTime = System.currentTimeMillis();
+}
+}
+
+
