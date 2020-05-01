@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Live FM & TV Channels</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="air.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  
+  <style>
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ff0000;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+</style>
+  
+  
+</head>
+<body>
+ <br>
+<div class="container" align="center">
+<b><h3>Radio
+<label class="switch">
+  <input type="checkbox" checked>
+  <span class="slider round"></span>
+</label>
+TV</h3></b>
+  <div id="radio" class="card" style="width:300px">
+  <br>
+    <img class="card-img-top" src="air.png" alt="Card image" style="width:50%" align="center">
+    <div class="card-body">
+      <h4 id="fms" class="card-title">  ಆಕಾಶವಾಣಿ ಹಾಸನ</h4>
+      <p class="card-text">
+        <audio id="rplayer" controls style="width: 260px;">
+<source src="https://nondelhi-lh.akamaihd.net/i/airlsmp003_1@838086/master.m3u8"></audio>
+
+<div class="dropdown show">
+<select id="fm" class="btn btn-secondary dropdown-toggle" style="width: 260px; height: 50px;"> 
+<option value="None"><b>Select AIR FM Station</b></option>
+
+<option value="https://nondelhi-lh.akamaihd.net/i/airlsmp003_1@838086/master.m3u8"><b>ಹಾಸನ</b></option>
+
+<option value="http://airkannada-lh.akamaihd.net/i/airkannada_1@507819/master.m3u8">ಬೆಂಗಳೂರು</option>
+
+<option value="http://117.254.107.94:8000/aruntest">ಮೈಸೂರು</option>
+
+<option value="http://airbangla-lh.akamaihd.net/i/airbangla_1@507821/master.m3u8">AIR Bangla</option>
+
+<option value="http://kashmiri-lh.akamaihd.net/i/kashmiri_1@528067/master.m3u8">AIR Kashmir</option>
+
+<option value="http://airodiya-lh.akamaihd.net/i/airodiya_1@528056/master.m3u8">AIR Odiya</option>
+
+<option value="http://airassamese-lh.akamaihd.net/i/airassamese_1@528059/master.m3u8">AIR Assam</option>
+
+<option value="http://airtelugu-lh.akamaihd.net/i/airtelugu_1@507818/master.m3u8">AIR Telugu</option>
+
+<option value="http://airtamil-lh.akamaihd.net/i/airtamil_1@507817/master.m3u8">AIR Tamil</option>
+
+<option value="http://airpunjabi-lh.akamaihd.net/i/airpunjabi_1@507822/master.m3u8">AIR Punjab</option>
+
+<option value="http://airmarathi-lh.akamaihd.net/i/airmarathi_1@507815/master.m3u8">AIR Marathi</option>
+
+<option value="http://nondelhi-lh.akamaihd.net/i/goldmumb_1@830453/master.m3u8">AIR Gold Mumbai</option>
+
+<option value="http://nondelhi-lh.akamaihd.net/i/airpune_1@825822/master.m3u8">AIR Pune</option>
+
+<option value="http://airgujarati-lh.akamaihd.net/i/airgujarati_1@507814/master.m3u8">AIR Gujarat</option> 
+
+<option value="http://airmalayalam-lh.akamaihd.net/i/airmalayalam_1@507816/master.m3u8">AIR Malayalam</option> 
+
+<option value="http://nondelhi-lh.akamaihd-staging.net/i/airshimla_1@813586/master.m3u8">AIR Shimla</option> 
+
+<option value="http://nondelhi-lh.akamaihd-staging.net/i/adilabad_1@830457/master.m3u8">AIR Adilabad</option> 
+
+<option value="http://nondelhi-lh.akamaihd-staging.net/i/airjodhpc_1@813591/master.m3u8">AIR Jodhpur</option> 
+
+<option value="http://airurdu-lh.akamaihd.net/i/airurdu_1@507813/master.m3u8">AIR Urdu</option> 
+
+</select>
+</div></p></div></div>
+
+
+
+
+<div id="tvc" class="card" style="width:320px">
+<video id="tplayer" class="card-image-top" width="300" height="160" playsinline controls>
+<source src="http://m-c15-j2apps.s.llnwi.net/hls/0255.DDChandana.in_480p/index.m3u8">
+</video>
+<div class="card-body">
+<div class="dropdown show">
+<select id="dd" class="btn btn-secondary dropdown-toggle" style="width: 280px; height: 50px;"> 
+<option value="None"><b>Select DD Channels</b></option>
+
+<option value="http://m-c15-j2apps.s.llnwi.net/hls/0255.DDChandana.in_480p/index.m3u8"><b>01. DD chandana</b></option>
+
+<option value="https://m-c17-j2apps.s.llnwi.net/hls/0178.DDBharati.in.m3u8">02. DD Bharati</option>
+
+<option value="https://m-c20-j2apps.s.llnwi.net/hls/2914.DDKisan.in_480p/index.m3u8">03. DD Kisan</option>
+
+<option value="http://playhls.media.nic.in/live/vyas/index.m3u8">04. CEC Gurukul</option>
+
+<option value="http://nicls2-lh.akamaihd.net/i/rstv_1@26970/master.m3u8">05. Rajya Sabha</option>
+
+<option value="https://nicls1-lh.akamaihd.net/i/lst_1@26969/index_1_av-p.m3u8?sd=10&rebase=on">06. Lok Sabha</option>
+
+<option value="http://103.199.161.254/Content/ddnational/Live/Channel(DDNational)/index.m3u8">07. DD National</option>
+
+<option value="http://103.199.161.254/Content/ddmalayalam/Live/Channel(DDMalayalam)/index.m3u8">08. DD Malayalam</option>
+
+<option value="http://playhls.media.nic.in/live/ddpunjabi-360p/index.m3u8">09. DD Punjabi</option>
+
+<option value="https://m-c20-j2apps.s.llnwi.net/hls/0252.DDBangla.in.m3u8">10. DD Bangla</option>
+
+<option value="https://m-c15-j2apps.s.llnwi.net/hls/0281.DDBihar.in.m3u8">11. DD Bihar</option>
+
+<option value="https://m-c20-j2apps.s.llnwi.net/hls/0113.DDSahyadri.in.m3u8">12. DD Sahyadri</option>
+
+<option value="https://m-c18-j2apps.s.llnwi.net/hls/0254.DDGirnar.in.m3u8">13. DD Girnar</option>
+
+<option value="https://m-c15-j2apps.s.llnwi.net/hls/0284.DDNorthEast.in.m3u8">14. DD Assam</option> 
+
+<option value="http://103.199.161.254/Content/ddsports/Live/Channel(DDSPORTS)/index.m3u8">15. DD Sports</option> 
+
+<option value="https://m-c15-j2apps.s.llnwi.net/hls/2880.DDYadagiri.in.m3u8">16. DD Yadagiri</option> 
+
+<option value="https://m-c15-j2apps.s.llnwi.net/hls/0250.DDPodhigai.in.m3u8">17. DD Podhigai</option> 
+
+<option value="https://m-c16-j2apps.s.llnwi.net/hls/0290.DDUP.in.m3u8">18. DD Up</option> 
+
+<option value="https://m-c20-j2apps.s.llnwi.net/hls/0449.ManoranjanTV.in.m3u8">19. DD Manoranjan</option>
+
+ <option value="https://m-c02-j2apps.s.llnwi.net/hls/7014.ABPNews.in.m3u8">20. ABP News</option>
+
+<option value="https://m-c01-j2apps.s.llnwi.net/live/0876.9XO.in.m3u8">21. 9XO</option> 
+
+<option value="https://m-c20-j2apps.s.llnwi.net/hls/0182.DDNews.in.m3u8">22. DD News</option> 
+
+<option value="http://linear07hun-lh.akamaihd.net/i/dilse_1@673921/index_2128_av-p.m3u8">23. Hungama</option> 
+
+</select>
+<p></p>
+
+<select id="tv" class="btn btn-secondary dropdown-toggle" style="width: 280px; height: 50px;"> 
+<option value="None"><b>Select TV Channels</b></option>
+
+<option value="https://vidcdn.vidgyor.com/suvarna-origin/liveabr/suvarna-origin/live1/chunks.m3u8">01. ಸುವರ್ಣ Suvarna</option>
+
+<option value="https://m-c01-j2apps.s.llnwi.net/hls/5412.TV5Kannada.in.m3u8">02. ಟಿವಿ೫ ಕನ್ನಡ TV5 Kannada</option>
+
+<option value="https://m-c14-j2apps.s.llnwi.net/hls/4969.BTV.in.m3u8">03. ಬಿ ಟಿವಿ BTV</option>
+
+<option value="https://m-c03-j2apps.s.llnwi.net/hls/0266.TV9Kannada.in.m3u8">04. ಟಿವಿ೯ ಕನ್ನಡ TV9 Kannada</option>
+
+<option value="https://m-c03-j2apps.s.llnwi.net/hls/0424.TV9Gujarati.in.m3u8">05. TV9 Gujarati</option>
+
+<option value="https://m-c03-j2apps.s.llnwi.net/hls/0493.TV9Marathi.in.m3u8">06. TV9 Marathi</option>
+
+<option value="http://103.199.161.254/Content/tv9telungu/Live/Channel(TV9Telungu)/index.m3u8">07. TV9 Telugu</option>
+
+<option value="https://news18assam-lh.akamaihd.net/i/n18assamne_1@526575/index_5_av-p.m3u8"><b>08. News 18 Assam</b></option>
+
+<option value="http://103.199.161.254/Content/bbcworld/Live/Channel(BBCworld)/index.m3u8">09. BBC World News</option>
+
+<option value="http://fash1043.cloudycdn.services/slive/_definst_/ftv_pg16_adaptive.smil/playlist.m3u8">10. F TV</option>
+
+<option value="https://5a9fe19ea6821.streamlock.net:443/gctv/ngrp:livestream_all/playlist.m3u8">11. GCTV GOA</option>
+
+<option value="https://etnowweblive-lh.akamaihd.net/i/ETN_1@348070/master.m3u8">12. ET NOW</option>
+
+<option value="https://feeds.intoday.in/hltapps/api/master.m3u8">13. INDIA TODAY</option>
+
+<option value="https://mbnowweb-lh.akamaihd.net/i/MRN_1@346545/master.m3u8">14. MIRROR NOW</option>
+
+<option value="https://timesnow-lh.akamaihd.net/i/TNHD_1@129288/master.m3u8">15.TIMES NOW</option>
+
+<option value="https://ndtv24x7elemarchana.akamaized.net/hls/live/2003678/ndtv24x7/ndtv24x7master.m3u8">16. NDTV</option>
+
+<option value="http://dwstream4-lh.akamaihd.net/i/dwstream4_live@131329/index_1_av-p.m3u8?sd=10&rebase=on">17. DW</option>
+
+<option value="http://livecdnh1.tvanywhere.ae/hls/nat_geo/05.m3u8">18. Nat Geo</option>
+
+<option value="http://livecdnh1.tvanywhere.ae:80/hls/nat_geo_people/05.m3u8">19. Nat Geo People</option> 
+
+<option value="http://livecdnh1.tvanywhere.ae/hls/nat_geo_wild/05.m3u8">20. Nat Geo Wild</option> 
+
+<option value="http://livecdnh1.tvanywhere.ae:80/hls/h2/05.m3u8">21. H2 History</option> 
+
+<option value="http://streamidvo.multitvsolution.in/DiscoveryEng-a/playlist.m3u8">22. Discovery</option> 
+
+<option value="http://210.210.155.35/uq2663/h/h141/01.m3u8">23. AXN</option> 
+
+<option value="https://m-c07-j2apps.s.llnwi.net/hls/0069.Zoom.in.m3u8">24. Zoom</option> 
+
+<option value="http://190.80.3.28/PBS/PBS.isml/index.m3u8">25. PBS Kids</option> 
+
+<option value="http://livecdnh3.tvanywhere.ae/hls/boomerang/05.m3u8">26. Boomerang</option> 
+
+<option value="http://livecdnh2.tvanywhere.ae/hls/english_club/04.m3u8">27. English Club</option> 
+
+<option value="https://streamer-1.toffeelive.com/live/sony_pix_720/index.m3u8">28. Sony Pix</option> 
+
+<option value="https://classicarts.global.ssl.fastly.net/live/cas/master_3000k.m3u8">29. Classic Art</option> 
+
+<option value="https://timesnow.airtel.tv/live/RN_pull/master.m3u8">30. Romedy Now</option> 
+
+<option value="https://classicarts.global.ssl.fastly.net/live/cas/master_3000k.m3u8">31. Classic Art</option> 
+
+<option value="http://103.199.161.254/Content/jeevan/Live/Channel(Jeevan)/index.m3u8">32. Jeevan</option> 
+
+<option value="https://m-c01-j2apps.s.llnwi.net/live/0781.9XJalwa.in.m3u8">33. 9X Jalwa</option> 
+
+<option value="https://m-c01-j2apps.s.llnwi.net/live_hd/0306.9XM.in.m3u8">34. 9XM</option> 
+
+<option value="https://m-c01-j2apps.s.llnwi.net/live/0876.9XO.in.m3u8">35. 9XO</option> 
+
+<option value="https://m-c01-j2apps.s.llnwi.net/live/0750.9XJhakaas.in.m3u8">36. 9X Jhakaas</option> 
+
+<option value="https://m-c01-j2apps.s.llnwi.net/live/0730.9XTashan.in.m3u8">37. 9X Tashan</option> 
+
+<option value="https://m-c17-j2apps.s.llnwi.net/hls/0197.MH1.in.m3u8">38. MH1</option> 
+
+<option value="https://m-c17-j2apps.s.llnwi.net/hls/1493.7SMusic.in.m3u8">39. 7SMusic</option> 
+
+<option value="https://m-c14-j2apps.s.llnwi.net/hls/5956.KolkataLive.in.m3u8">40. Kolkata Live</option> 
+
+<option value="https://m-c16-j2apps.s.llnwi.net/hls/1785.OscarMoviesBhojpuri.in.m3u8">41. OSCAR Movies</option> 
+
+<option value="https://m-c037-j2apps.s.llnwi.net/hls/7038.SonyMax2.in.m3u8">42. Sony Max2</option> 
+
+<option value="https://d1fi19tywmn14b.cloudfront.net/yuppindmov/ngrp:ytelcom.stream_all/playlist.m3u8">43. Telugu Movies Comedy</option> 
+
+<option value="http://livecdnh1.tvanywhere.ae/hls/star_world/04.m3u8">44. Star World</option> 
+
+<option value="http://wowza-feed09-nasa.pluto.tv/feed09/ngrp:nasa_all/playlist.m3u8">45. Nasa</option> 
+
+<option value="http://livecdnh1.tvanywhere.ae/hls/star_movies/04.m3u8">46. Star Movies HD</option> 
+
+<option value="https://m-c02-j2apps.s.llnwi.net/hls/0188.SamayUPUttrakhand.in.m3u8">47. Samay UP UttraKhand</option> 
+
+<option value="https://m-c02-j2apps.s.llnwi.net/hls/0185.SamayBiharJharkhand.in.m3u8">48. Samay Bihar  Jharkhand</option> 
+
+<option value="https://m-c02-j2apps.s.llnwi.net/hls/0186.SamayRajasthan.in.m3u8">49. Samay Rajasthan</option> 
+
+<option value="https://m-c02-j2apps.s.llnwi.net/hls/0187.SamayMPChhattisgarh.in.m3u8">50. Samay MP Chattisgarh</option> 
+
+<option value="https://m-c03-j2apps.s.llnwi.net/hls/0501.JaiTelanganaTV.in.m3u8">51. Jai Telangana</option> 
+
+<option value="https://m-c18-j2apps.s.llnwi.net/hls/1380.KappaTV.in.m3u8">52. Kappa TV</option> 
+
+<option value="https://m-c01-j2apps.s.llnwi.net/hls/5290.SkystarMovies.in.m3u8">53. ABZY Movies</option> 
+
+<option value="https://stream.ecable.tv/afrobeats/index.m3u8">54. AFRO Beats</option> 
+
+<option value="https://vcndstv.teleosmedia.com/stream/dstv/sunburn/seglist_720p.m3u8">55. SunBurn</option> 
+
+<option value="https://m-c29-j2apps.s.llnwi.net/hls/4141.SaralJeevan.in.m3u8">56. Saral Jeevan</option>
+
+<option value="https://m-c01-j2apps.s.llnwi.net/hls_hd/0204.MusicIndia.in.m3u8">57. Music India</option>
+
+<option value="https://m-c09-j2apps.s.llnwi.net/hls/8004.Mollywood.in.m3u8">58. Mollywood</option>
+
+<option value="https://m-c09-j2apps.s.llnwi.net/hls/8003.Lollywood.in.m3u8">59. Lollywood</option>
+
+<option value="https://m-c09-j2apps.s.llnwi.net/hls/8001.Bollywood.in.m3u8">60. Bollywood</option>
+
+<option value="https://m-c09-j2apps.s.llnwi.net/hls/8002.Kollywood.in.m3u8">61. Kollywood</option>
+
+<option value="https://m-c09-j2apps.s.llnwi.net/hls/8005.Tollywood.in.m3u8">62. Tollywood</option>
+
+<option value="https://m-c16-j2apps.s.llnwi.net/hls/1901.Tollywood.in.m3u8">63. Tollywood 1</option>
+
+<option value="http://ms003.happytv.com.tw/live/F9YMztT5DcwWEr1f/index.m3u8">64. Baby First</option> 
+
+<option value="https://m-c010-j2apps.s.llnwi.net/hls/8046.KidCentral.in.m3u8">65. Kid Central</option>
+
+<option value="http://bcoveliveios-i.akamaihd.net/hls/live/206632/1997976452001/FamilyHLS/FamilyHLS_Live_1200.m3u8">66. TCT Kids</option> 
+
+<option value="http://livecdnh3.tvanywhere.ae/hls/duck/index.m3u8">67. Duck</option> 
+
+</select>
+</div>
+</div>
+</div>
+
+
+
+</div>
+  <br>
+  
+<script type="text/javascript"> 
+
+$(document).ready(function(){ 
+$("#radio").hide();
+
+$("#fm").change(function() {
+var selectedTxt = $("#fm option:selected").text();
+var selectedVal = $("#fm option:selected").val();
+$("#rplayer").attr("src", selectedVal);
+$("#fms").text(selectedTxt);
+
+var radio = $('#rplayer')[0];
+radio.src = selectedVal;
+radio.load();
+radio.play();
+
+});
+
+
+$('input[type="checkbox"]').click(function(){
+if($(this).prop("checked") == true)
+{
+$("#radio").hide();
+var video1 = $('#rplayer')[0];
+video1.pause();
+$("#tvc").show();
+ } 
+ else 
+ if($(this).prop("checked") == false)
+ {
+$("#radio").show();
+var video1 = $('#tplayer')[0];
+video1.pause();
+$("#tvc").hide();
+ }
+  });
+  
+  
+  
+  
+  
+  
+  
+  
+  $("#dd").change(function() {
+
+//var selectedTxt = $("#dd option:selected").text();
+var selectedVal = $("#dd option:selected").val();
+
+var video1 = $('#tplayer')[0];
+video1.src = selectedVal;
+video1.load();
+video1.play();
+$("#tv").prop('selectedIndex', 0);
+//$("#tv").val("Select TV Channels").change();
+//$("#fms").text(selectedTxt);
+
+});
+
+
+$("#tv").change(function() {
+
+//var selectedTxt = $("#tv option:selected").text();
+var selectedVal = $("#tv option:selected").val();
+
+var video1 = $('#tplayer')[0];
+video1.src = selectedVal;
+video1.load();
+video1.play();
+$("#dd").prop('selectedIndex', 0);
+//$("#dd").val("Select DD Channels").change();
+//$("#fms").text(selectedTxt);
+
+});
+  
+  
+
+});
+</script>
+
+
+</body>
+</html>
+
+
+<!--
+
+https://j2apps.s.llnwi.net/https://m-c29-j2apps.s.llnwi.net/hls/4141.SaralJeevan.in.m3u8
+
+https://m-c07-j2apps.s.llnwi.net/hls/0589.Mastiii.in.m3u8
+
+https://m-c02-j2apps.s.llnwi.net/hls/7014.ABPNews.in.m3u8
+
+https://m-c02-j2apps.s.llnwi.net/hls/0091.IndiaTV.in.m3u8
+
+https://m-c16-j2apps.s.llnwi.net/hls/0380.NewsX.in.m3u8
+
+https://m-c29-j2apps.s.llnwi.net/hls/0344.News24.in.m3u8
+
+https://m-c036-j2apps.s.llnwi.net/hls/0442.IndiaNews.in.m3u8
+
+https://m-c18-j2apps.s.llnwi.net/hls/1604.JantaTV.in.m3u8
+
+https://m-c02-j2apps.s.llnwi.net/hls/7016.ABPMajha.in.m3u8
+
+https://m-c03-j2apps.s.llnwi.net/hls/1843.KNews24X7.in.m3u8
+
+https://m-c036-j2apps.s.llnwi.net/hls/5045.BFlixMovies.in.m3u8
+
+https://m-c036-j2apps.s.llnwi.net/hls/2820.MahaMovie.in.m3u8
+
+https://m-c20-j2apps.s.llnwi.net/hls/0449.ManoranjanTV.in.m3u8
+
+https://m-c036-j2apps.s.llnwi.net/hls/2940.WOWCinemaOne.in.m3u8
+
+https://m-c04-j2apps.s.llnwi.net/hls/5265.HareKrsna.in.m3u8"
+
+https://m-c29-j2apps.s.llnwi.net/hls/0116.Sanskar.in.m3u8
+
+https://m-c29-j2apps.s.llnwi.net/hls/5835.BhaktiSagar.in.m3u8
+
+https://m-c01-j2apps.s.llnwi.net/hls/0133.Sadhna.in.m3u8
+
+https://m-c04-j2apps.s.llnwi.net/hls/9310.GODTV.in.m3u8
+
+https://m-c07-j2apps.s.llnwi.net/hls/1328.KhushbooBangla.in.m3u8
+
+https://m-c02-j2apps.s.llnwi.net/hls/3724.SangeetMarathi.in.m3u8"
+
+https://m-c02-j2apps.s.llnwi.net/hls/0138.SangeetBangla.in.m3u8
+
+https://m-c01-j2apps.s.llnwi.net/hls/0432.SangeetBhojpuri.in.m3u8
+
+https://m-c17-j2apps.s.llnwi.net/hls/6501.AndyHaryana.in.m3u8
+
+
+
+https://m-c18-j2apps.s.llnwi.net/hls/0211.MakkalTV.in.m3u8
+
+
+
+https://m-c03-j2apps.s.llnwi.net/hls/0501.JaiTelanganaTV.in.m3u8
+
+https://m-c01-j2apps.s.llnwi.net/hls/0440.TV5Telugu.in.m3u8
+
+https://m-c036-j2apps.s.llnwi.net/hls/0515.MahaaTV.in.m3u8
+
+https://m-c03-j2apps.s.llnwi.net/hls/6521.Movieplus.in.m3u8
+
+https://m-c01-j2apps.s.llnwi.net/hls/6523.BOXCinema.in.m3u8
+
+https://m-c04-j2apps.s.llnwi.net/hls/7000.HousefullMovie.in.m3u8
+
+
+https://m-c02-j2apps.s.llnwi.net/hls/7015.ABPAnanda.in.m3u8"
+
+->
+
