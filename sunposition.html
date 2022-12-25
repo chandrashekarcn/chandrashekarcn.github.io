@@ -1,0 +1,71 @@
+<html>
+  <head>
+    <title>Sun Position - Page Created by ChatGPT</title>
+  </head>
+  <body>
+    <h1>Sun Position</h1>
+    <div id="sun-position-container"></div>
+    <script src="https://www.nrel.gov/docs/fy08osti/34302/downloads/spa.js"></script>
+    <script>
+      // Get the visitor's current location
+      navigator.geolocation.getCurrentPosition(function(position) {
+        // Calculate the sun's position using the visitor's latitude and longitude
+        const latitude = position.coords.latitude;
+        const longitude = position.coords.longitude;
+        const sunPosition = calculateSunPosition(latitude, longitude);
+
+        // Create an SVG element to represent the sun
+        const sun = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+        sun.setAttribute("cx", sunPosition.x);
+        sun.setAttribute("cy", sunPosition.y);
+        sun.setAttribute("r", 20);
+        sun.setAttribute("fill", "yellow");
+
+        // Add the sun to the page
+        const container = document.getElementById("sun-position-container");
+        container.appendChild(sun);
+      });
+
+      function calculateSunPosition(latitude, longitude) {
+        // Calculate the current Julian day
+        const date = new Date();
+        const julianDay = calculateJulianDay(date);
+
+        // Calculate the sun's position using the SPA algorithm
+        const solarPosition = SPA.calculateSolarPosition(julianDay, latitude, longitude);
+
+        // Convert the sun's azimuth and altitude to Cartesian coordinates
+        const x = solarPosition.azimuth;
+        const y = 90 - solarPosition.altitude;
+
+        // Return the sun's position
+        return {
+          x: x,
+          y: y
+        };
+      }
+
+      function calculateJulianDay(date) {
+        // Calculate the Julian day using the formula from the Astronomical Algorithms book by Jean Meeus
+        const year = date.getFullYear();
+        const month = date.getMonth() + 1;
+        const day = date.getDate();
+        const hours = date.getHours();
+        const minutes = date.getMinutes();
+        const seconds = date.getSeconds();
+
+        if (month <= 2) {
+          year -= 1;
+          month += 12;
+        }
+
+        const a = Math.floor(year / 100);
+        const b = 2 - a + Math.floor(a / 4);
+        const julianDay = Math.floor(365.25 * (year + 4716)) + Math.floor(30.6001 * (month + 1)) + day + b - 1524.5;
+
+        const decimalHours = hours + (minutes / 60) + (seconds / 3600);
+        return julianDay + decimalHours / 24;
+      }
+    </script>
+  </body>
+</html>
