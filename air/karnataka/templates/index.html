@@ -157,19 +157,19 @@ footer {
 <!-------------social media, chandana, market price, weather----->
 <table class="center" style="width:100%;">
 <tr style="height:110px">
-    <td onclick="play('kissantv')" style="color:yellow;background:red;width:25%">
+    <td onclick="play('kissantv');" style="color:yellow;background:red;width:25%">
       <i id="kissantv" class="fa fa-2x" style="color:yellow;background:red;text-align:center;">ದೂರದರ್ಶನ<hr style="margin:4px;visibility:hidden;">ಡಿಡಿ ಕಿಸಾನ್</i>
     </td>
 
-    <td onclick="play('chandanatv')" style="color:yellow;background:red;width:25%">
+    <td onclick="play('chandanatv');" style="color:yellow;background:red;width:25%">
       <i id="chandanatv" class="fa fa-2x" style="color:yellow;background:red;text-align:center;">ಡಿಡಿ ಚಂದನ<hr style="margin:4px;visibility:hidden;">ಮಣ್ಣಿನ ಮಕ್ಕಳು</i>
     </td>
 
-    <td onclick="play('market')" style="color:yellow;background:red;text-align:center;width:20%">
-      <i id="heart" class="fa fa-2x">ಮಾರುಕಟ್ಟೆ<hr style="margin:4px;visibility:hidden;">ಧರಣೆ</i>
+    <td onclick="play('market');" style="color:yellow;background:red;text-align:center;width:20%">
+      <i id="heart" class="fa fa-2x" style="color:yellow;background:red;text-align:center;">ಮಾರುಕಟ್ಟೆ<hr style="margin:4px;visibility:hidden;">ಧರಣೆ</i>
     </td>
 
-    <td onclick="play('weather')" style="width=20%;color:yellow;background:red;width:30%">
+    <td onclick="play('weather');" style="width=20%;color:yellow;background:red;width:30%">
       <i id="imgcount" class="fa fa-2x" style="color:yellow;background:red;text-align:center;">ಭಾರತದ ಹವಮಾನ<hr style="margin:4px;visibility:hidden;">ಉಪಗ್ರಹ ಚಿತ್ರ ೦/೭</i>
     </td>
   </tr>
@@ -700,8 +700,8 @@ switch(text){
       xx.contentWindow.postMessage(JSON.stringify({ event: 'command', func: 'playVideo' }), '*');
       radioStation("Chandana");
     } else {
-      xx.contentWindow.postMessage(JSON.stringify({ event: 'command', func: 'stopVideo' }), '*');
       document.getElementById("mm").style.display = "none";
+      xx.contentWindow.postMessage(JSON.stringify({ event: 'command', func: 'stopVideo' }), '*');
       xx.style.display = "none";
       radioStation('off');}
     break;
@@ -709,10 +709,10 @@ switch(text){
   case 'market':
     // code block
     document.getElementById("weather").style.display = "none";
-    document.getElementById("tv").pause();
-    document.getElementById("tv").style.display = "none";
     document.getElementById("kissan").contentWindow.postMessage(JSON.stringify({ event: 'command', func: 'stopVideo' }), '*');
     document.getElementById("kissan").style.display = "none";
+    document.getElementById("chandana").contentWindow.postMessage(JSON.stringify({ event: 'command', func: 'stopVideo' }), '*');
+    document.getElementById("chandana").style.display = "none";
     radioStation('off');
     var x = document.getElementById("market");
     if (x.style.display == "none") {
@@ -733,8 +733,8 @@ switch(text){
     document.getElementById("imageloading").innerHTML = "ಹವಾಮಾನ ಚಿತ್ರದ ಡೇಟಾವನ್ನು ಪಡೆಯಲಾಗುತ್ತಿದೆ";
     document.getElementById("weather").style.display = "block";
     document.getElementById("market").style.display = "none";
-    document.getElementById("tv").pause();
-    document.getElementById("tv").style.display = "none";
+    document.getElementById("chandana").contentWindow.postMessage(JSON.stringify({ event: 'command', func: 'stopVideo' }), '*');
+    document.getElementById("chandana").style.display = "none";
     document.getElementById("kissan").contentWindow.postMessage(JSON.stringify({ event: 'command', func: 'stopVideo' }), '*');
     document.getElementById("kissan").style.display = "none";
     document.getElementById("weather").style.visibility = "hidden";
