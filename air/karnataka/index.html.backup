@@ -100,7 +100,7 @@ footer {
 </table>
 
 <!---------------------------Marquee---------------------------->
-<marquee>ಚಂದ್ರಶೇಖರ್ ಸಿ ಎನ್  ಅವರಿಂದ ರೈತರು, ವಿದ್ಯಾರ್ಥಿಗಳು ಮತ್ತು ಕನ್ನಡಿಗರಿಗಾಗಿ ವಿನ್ಯಾಸಗೊಳಿಸಲಾಗಿದೆ. **** ಜೈ ಕರ್ನಾಟಕ. **** ಜೈ ಜವಾನ್ ಜೈ ಕಿಸಾನ್. **** ವಂದೇ ಮಾತರಂ. ****</marquee>
+<marquee>ಚಂದ್ರಶೇಖರ್ ಸಿ ಎನ್  ಅವರಿಂದ ರೈತರು, ವಿದ್ಯಾರ್ಥಿಗಳು, ಶಿಕ್ಷಕರು, ಉಪನ್ಯಾಸಕರು, ಪ್ರಾಧ್ಯಾಪಕರು, ಸಂಶೋಧಕರು, ವಿಜ್ಞಾನಿಗಳು ಮತ್ತು ಕನ್ನಡಿಗರಿಗಾಗಿ ವಿನ್ಯಾಸಗೊಳಿಸಲಾಗಿದೆ. ಸಮಸ್ಯೆಗಳ ಪರಿಹಾರಕ್ಕೆ , ಜ್ಞಾನ ಅಬಿರುದ್ದಿಗೆ ಮತ್ತು  ಸಂಶೋಧನೆಗಾಗಿ ಇದನ್ನು ಬಳಸಿ.  **** ಜೈ ಕರ್ನಾಟಕ. **** ಜೈ ಜವಾನ್ ಜೈ ಕಿಸಾನ್. **** ವಂದೇ ಮಾತರಂ. ****</marquee>
 <!--------------------------------------------------------------->
 
 
@@ -157,19 +157,19 @@ footer {
 <!-------------social media, chandana, market price, weather----->
 <table class="center" style="width:100%;">
 <tr style="height:110px">
-    <td onclick="play('kissantv')" style="color:yellow;background:red;width:25%">
-      <i id="chandana" class="fa fa-2x" style="color:yellow;background:red;text-align:center;">ದೂರದರ್ಶನ<hr style="margin:4px;visibility:hidden;">ಡಿಡಿ ಕಿಸಾನ್</i>
+    <td onclick="play('kissantv');" style="color:yellow;background:red;width:25%">
+      <i id="kissantv" class="fa fa-2x" style="color:yellow;background:red;text-align:center;">ದೂರದರ್ಶನ<hr style="margin:4px;visibility:hidden;">ಡಿಡಿ ಕಿಸಾನ್</i>
     </td>
 
-    <td onclick="play('chandanatv')" style="color:yellow;background:red;width:25%">
-      <i id="chandana" class="fa fa-2x" style="color:yellow;background:red;text-align:center;">ದೂರದರ್ಶನ<hr style="margin:4px;visibility:hidden;">ಡಿಡಿ ಚಂದನ</i>
+    <td onclick="play('chandanatv');" style="color:yellow;background:red;width:25%">
+      <i id="chandanatv" class="fa fa-2x" style="color:yellow;background:red;text-align:center;">ಡಿಡಿ ಚಂದನ<hr style="margin:4px;visibility:hidden;">ಮಣ್ಣಿನ ಮಕ್ಕಳು</i>
     </td>
 
-    <td onclick="play('market')" style="color:yellow;background:red;text-align:center;width:20%">
-      <i id="heart" class="fa fa-2x">ಮಾರುಕಟ್ಟೆ<hr style="margin:4px;visibility:hidden;">ಧರಣೆ</i>
+    <td onclick="play('market');" style="color:yellow;background:red;text-align:center;width:20%">
+      <i id="heart" class="fa fa-2x" style="color:yellow;background:red;text-align:center;">ಮಾರುಕಟ್ಟೆ<hr style="margin:4px;visibility:hidden;">ಧರಣೆ</i>
     </td>
 
-    <td onclick="play('weather')" style="width=20%;color:yellow;background:red;width:30%">
+    <td onclick="play('weather');" style="width=20%;color:yellow;background:red;width:30%">
       <i id="imgcount" class="fa fa-2x" style="color:yellow;background:red;text-align:center;">ಭಾರತದ ಹವಮಾನ<hr style="margin:4px;visibility:hidden;">ಉಪಗ್ರಹ ಚಿತ್ರ ೦/೭</i>
     </td>
   </tr>
@@ -239,21 +239,44 @@ footer {
 <!----------------------------------------------------------------->
 
 <!----------------------DD Kissan TV----------------------------->
+<!--    src="https://www.youtube.com/embed/MvDyEOME6uI?autoplay=1&rel=0&enablejsapi=1"  -->
+
 <iframe 
     id="kissan" 
     style="display:none" 
     width="100%" 
     height="680" 
-    src="https://www.youtube.com/embed/XRDjb8zcO7o?autoplay=1&rel=0&enablejsapi=1" 
+    src="https://www.youtube.com/embed/QBIm21KAqqA?autoplay=1&enablejsapi=1"
     allowfullscreen="allowfullscreen"
     allow="autoplay"
     frameborder="0">
 </iframe>
 
 
-<!----------------------DD Chandana TV----------------------------->
-<video id="tv" style="display:none;" width="100%" height="580" controls src="http://m-c15-j2apps.s.llnwi.net/hls/0255.DDChandana.in_480p/index.m3u8" type="video/mp4">ಕ್ಷಮಿಸಿ</video>
+<!----------------------DD Chandana youtube---------------------->
+<!-- <video id="tv" style="display:none;" width="100%" height="580" controls src="http://m-c15-j2apps.s.llnwi.net/hls/0255.DDChandana.in_480p/index.m3u8" type="video/mp4">ಕ್ಷಮಿಸಿ</video> -->
+
+<iframe 
+    id="chandana" 
+    style="display:none" 
+    width="100%" 
+    height="680" 
+    src="https://www.youtube.com/embed/OyopDt7srBU?autoplay=1&enablejsapi=1"
+    allowfullscreen="allowfullscreen"
+    allow="autoplay"
+    frameborder="0">
+</iframe>
+
+
 <!----------------------------------------------------------------->
+
+<!------------Select for mm youtube----------------------------------->
+<div>
+<select name="mm" id="mm" style="font-size:30px;padding:20px 20px 20px 20px;width:100%;display:none;" onchange="mmPlay(this.value);">
+    <option value="">ಮಣ್ಣಿನ ಮಕ್ಕಳು ಕಾರ್ಯಕ್ರಮಗಳನ್ನು ಇಲ್ಲಿ ಆಯ್ಕೆಮಾಡಿ</option>
+</select></div>
+<!----------------------------------------------------------------->
+
 
 <!----------------------Daily Market Price------------------------->
 <!-- <img id="market" style="display:none" src="" alt="ಮಾರುಕಟ್ಟೆ ಧರಣೆ" width="500" height="600"> -->
@@ -454,128 +477,155 @@ function openCode(t1,f1,a1){
 //------------------------------------------------------------------
 
 
+
 //-----------------------Radio Station Selection--------------------
 // Radio Station Selection.
 
 function play(text) {
 switch(text){
   case 'Hassan':
-    document.getElementById("radio").src = 'https://air.pc.cdn.bitgravity.com/air/live/pbaudio172/playlist.m3u8';
+    //document.getElementById("radio").src = 'https://air.pc.cdn.bitgravity.com/air/live/pbaudio172/playlist.m3u8';
+    document.getElementById("radio").src = Hassan_src;
     document.getElementById("mark").innerHTML = '<img style="float:left" src="'+ in_flag_img + '" alt="flag" width="180" height="110"><marquee style="font-size:60px;text-align:center;" behavior="slide" loop="1" width="80%" direction="up" height="100px"><b>13. ಹಾಸನ</b></marquee>'
     playButton();
     radioStation('Hassan');
     break;
+
   case 'Banglore':
-    document.getElementById("radio").src = 'https://airhlspush.pc.cdn.bitgravity.com/httppush/hlspbaudio030/hlspbaudio03032kbps.m3u8';
+    //document.getElementById("radio").src = 'https://airhlspush.pc.cdn.bitgravity.com/httppush/hlspbaudio030/hlspbaudio03032kbps.m3u8';
+    document.getElementById("radio").src = Bangalore_src;
     document.getElementById("mark").innerHTML = '<img style="float:left" src="'+ in_flag_img + '" alt="flag" width="180" height="110"><marquee style="font-size:60px;text-align:center;" behavior="slide" loop="1" width="80%" direction="up" height="100px"><b>11. ಬೆಂಗಳೂರು</b></marquee>'
     playButton();
     radioStation('Banglore');
     break;
+
   case 'Bhadravathi':
-    // code block
-    document.getElementById("radio").src = 'https://air.pc.cdn.bitgravity.com/air/live/pbaudio211/playlist.m3u8';
+    //document.getElementById("radio").src = 'https://air.pc.cdn.bitgravity.com/air/live/pbaudio211/playlist.m3u8';
+    document.getElementById("radio").src = Bhadravati_src;
     document.getElementById("mark").innerHTML = '<img style="float:left" src="'+ in_flag_img + '" alt="flag" width="180" height="110"><marquee style="font-size:60px;text-align:center;" behavior="slide" loop="1" width="80%" direction="up" height="100px"><b>12. ಭದ್ರಾವತಿ</b></marquee>'
     playButton();
     radioStation('Bhadravathi');
     break;
+
   case 'Karwar':
-    // code block
-    document.getElementById("radio").src = 'https://air.pc.cdn.bitgravity.com/air/live/pbaudio123/playlist.m3u8';
+    //document.getElementById("radio").src = 'https://air.pc.cdn.bitgravity.com/air/live/pbaudio123/playlist.m3u8';
+    document.getElementById("radio").src = Karwar_src;
     document.getElementById("mark").innerHTML = '<img style="float:left" src="'+ in_flag_img + '" alt="flag" width="180" height="110"><marquee style="font-size:60px;text-align:center;" behavior="slide" loop="1" width="80%" direction="up" height="100px"><b>2. ಕಾರವಾರ</b></marquee>'
     playButton();
     radioStation('Karwar');
     break;
+
   case 'Dharwad':
-    // code block
-    document.getElementById("radio").src = 'https://air.pc.cdn.bitgravity.com/air/live/pbaudio150/playlist.m3u8';
+    //document.getElementById("radio").src = 'https://air.pc.cdn.bitgravity.com/air/live/pbaudio150/playlist.m3u8';
+    document.getElementById("radio").src = Dharwad_src;
     document.getElementById("mark").innerHTML = '<img style="float:left" src="'+ in_flag_img + '" alt="flag" width="180" height="110"><marquee style="font-size:60px;text-align:center;" behavior="slide" loop="1" width="80%" direction="up" height="100px"><b>3. ಧಾರವಾಡ</b></marquee>'
     playButton();
     radioStation('Dharwad');
     break;
+
   case 'Hospet':
-    // code block
-    document.getElementById("radio").src = 'https://air.pc.cdn.bitgravity.com/air/live/pbaudio184/playlist.m3u8';
+    //document.getElementById("radio").src = 'https://air.pc.cdn.bitgravity.com/air/live/pbaudio184/playlist.m3u8';
+    document.getElementById("radio").src = Hospet_src;
     document.getElementById("mark").innerHTML = '<img style="float:left" src="'+ in_flag_img + '" alt="flag" width="180" height="110"><marquee style="font-size:60px;text-align:center;" behavior="slide" loop="1" width="80%" direction="up" height="100px"><b>5. ಹೊಸಪೇಟೆ</b></marquee>'
     playButton();
     radioStation('Hospet');
     break;
+
   case 'Mangalore':
-    // code block
-    document.getElementById("radio").src = 'https://air.pc.cdn.bitgravity.com/air/live/pbaudio073/playlist.m3u8';
+    //document.getElementById("radio").src = 'https://air.pc.cdn.bitgravity.com/air/live/pbaudio073/playlist.m3u8';
+    document.getElementById("radio").src = Mangalore_src;
     document.getElementById("mark").innerHTML = '<img style="float:left" src="'+ in_flag_img + '" alt="flag" width="180" height="110"><marquee style="font-size:60px;text-align:center;" behavior="slide" loop="1" width="80%" direction="up" height="100px"><b>6. ಮಂಗಳೂರು</b></marquee>'
     playButton();
     radioStation('Mangalore');
     break;
+
   case 'Vijayapura':
-    // code block
-    document.getElementById("radio").src = 'https://air.pc.cdn.bitgravity.com/air/live/pbaudio145/playlist.m3u8';
+    //document.getElementById("radio").src = 'https://air.pc.cdn.bitgravity.com/air/live/pbaudio145/playlist.m3u8';
+    document.getElementById("radio").src = Vijayapura_src;
     document.getElementById("mark").innerHTML = '<img style="float:left" src="'+ in_flag_img + '" alt="flag" width="180" height="110"><marquee style="font-size:60px;text-align:center;" behavior="slide" loop="1" width="80%" direction="up" height="100px"><b>8. ವಿಜಯಪುರ</b></marquee>'
     playButton();
     radioStation('Vijayapura');
     break;
+
   case 'Kalburgi':
-    // code block
-    document.getElementById("radio").src = 'https://air.pc.cdn.bitgravity.com/air/live/pbaudio015/playlist.m3u8';
+    //document.getElementById("radio").src = 'https://air.pc.cdn.bitgravity.com/air/live/pbaudio015/playlist.m3u8';
+    document.getElementById("radio").src = Kalaburagi_src;
     document.getElementById("mark").innerHTML = '<img style="float:left" src="'+ in_flag_img + '" alt="flag" width="180" height="110"><marquee style="font-size:60px;text-align:center;" behavior="slide" loop="1" width="80%" direction="up" height="100px"><b>9. ಕಲಬುರಗಿ</b></marquee>'
     playButton();
     radioStation('Kalburgi');
     break;
+
   case 'Chitradurga':
-    // code block
-    document.getElementById("radio").src = 'https://air.pc.cdn.bitgravity.com/air/live/pbaudio105/playlist.m3u8';
+    //document.getElementById("radio").src = 'https://air.pc.cdn.bitgravity.com/air/live/pbaudio105/playlist.m3u8';
+    document.getElementById("radio").src = Chitradurga_src;
     document.getElementById("mark").innerHTML = '<img style="float:left" src="'+ in_flag_img + '" alt="flag" width="180" height="110"><marquee style="font-size:60px;text-align:center;" behavior="slide" loop="1" width="80%" direction="up" height="100px"><b>10. ಚಿತ್ರದುರ್ಗ</b></marquee>'
     playButton();
     radioStation('Chitradurga');
     break;
+
   case 'Raichur':
-    // code block
-    document.getElementById("radio").src = 'https://air.pc.cdn.bitgravity.com/air/live/pbaudio198/playlist.m3u8';
+    //document.getElementById("radio").src = 'https://air.pc.cdn.bitgravity.com/air/live/pbaudio198/playlist.m3u8';
+    document.getElementById("radio").src = Raichur_src;
     document.getElementById("mark").innerHTML = '<img style="float:left" src="'+ in_flag_img + '" alt="flag" width="180" height="110"><marquee style="font-size:60px;text-align:center;" behavior="slide" loop="1" width="80%" direction="up" height="100px"><b>1. ರಾಯಚೂರು</b></marquee>'
     playButton();
     radioStation('Raichur');
     break;
+
   case 'Madikeri':
-    // code block
-    document.getElementById("radio").src = 'https://air.pc.cdn.bitgravity.com/air/live/pbaudio068/playlist.m3u8';
+    //document.getElementById("radio").src = 'https://air.pc.cdn.bitgravity.com/air/live/pbaudio068/playlist.m3u8';
+    document.getElementById("radio").src = Madikeri_src;
     document.getElementById("mark").innerHTML = '<img style="float:left" src="'+ in_flag_img + '" alt="flag" width="180" height="110"><marquee style="font-size:60px;text-align:center;" behavior="slide" loop="1" width="80%" direction="up" height="100px"><b>4. ಮಡಿಕೇರಿ</b></marquee>'
     playButton();
     radioStation('Madikeri');
     break;
+
   case 'Mysore':
-    // code block
-    document.getElementById("radio").src = 'https://air.pc.cdn.bitgravity.com/air/live/pbaudio177/playlist.m3u8';
+    //document.getElementById("radio").src = 'https://air.pc.cdn.bitgravity.com/air/live/pbaudio177/playlist.m3u8';
+    document.getElementById("radio").src = Mysore_src;
     document.getElementById("mark").innerHTML = '<img style="float:left" src="'+ in_flag_img + '" alt="flag" width="180" height="110"><marquee style="font-size:60px;text-align:center;" behavior="slide" loop="1" width="80%" direction="up" height="100px"><b>7. ಮೈಸೂರು</b></marquee>'
     playButton();
     radioStation('Mysore');
     break;
+
+  case 'Bellari':
+    document.getElementById("radio").src = Bellari_src;
+    document.getElementById("mark").innerHTML = '<img style="float:left" src="'+ in_flag_img + '" alt="flag" width="180" height="110"><marquee style="font-size:60px;text-align:center;" behavior="slide" loop="1" width="80%" direction="up" height="100px"><b>14. ಬಳ್ಳರಿ</b></marquee>'
+    playButton();
+    radioStation('Bellari');
+    break;
+
   case 'Kannada':
-    // code block
-    document.getElementById("radio").src = 'https://air.pc.cdn.bitgravity.com/air/live/pbaudio029/playlist.m3u8';
+    document.getElementById("radio").src = 'https://airhlspush.pc.cdn.bitgravity.com/httppush/hlspbaudio030/hlspbaudio030_Auto.m3u8';
+    //document.getElementById("radio").src = 
     document.getElementById("mark").innerHTML = '<img style="float:left" src="'+ in_flag_img + '" alt="flag" width="180" height="110"><marquee style="font-size:60px;text-align:center;" behavior="slide" loop="1" width="80%" direction="up" height="100px"><b>ಕನ್ನಡ</b></marquee>'
     playButton();
     radioStation('off');
     break;
+
   case 'Amruth':
-    // code block
-    document.getElementById("radio").src = 'https://air.pc.cdn.bitgravity.com/air/live/pbaudio028/playlist.m3u8';
+    //document.getElementById("radio").src = 'https://airhlspush.pc.cdn.bitgravity.com/httppush/hlspbaudio028/hlspbaudio028_Auto.m3u8';
+    document.getElementById("radio").src = amrutvarshini_src;
     document.getElementById("mark").innerHTML = '<img style="float:left" src="'+ in_flag_img + '" alt="flag" width="180" height="110"><marquee style="font-size:60px;text-align:center;" behavior="slide" loop="1" width="80%" direction="up" height="100px"><b>ಅಮೃತವರ್ಷಿಣಿ</b></marquee>'
     playButton();
     radioStation('off');
     break;
+
   case 'Rainbow':
-    // code block
-    document.getElementById("radio").src = 'https://air.pc.cdn.bitgravity.com/air/live/pbaudio027/playlist.m3u8';
+    //document.getElementById("radio").src = 'https://airhlspush.pc.cdn.bitgravity.com/httppush/hlspbaudio027/hlspbaudio027_Auto.m3u8';
+    document.getElementById("radio").src = kaamanbilu_src;
     document.getElementById("mark").innerHTML = '<img style="float:left" src="'+ in_flag_img + '" alt="flag" width="180" height="110"><marquee style="font-size:60px;text-align:center;" behavior="slide" loop="1" width="80%" direction="up" height="100px"><b>ರೈನ್ ಬೋ</b></marquee>'
     playButton();
     radioStation('off');
     break;
+
   case 'Vividh':
-    // code block
-    document.getElementById("radio").src = 'https://air.pc.cdn.bitgravity.com/air/live/pbaudio026/playlist.m3u8';
+    //document.getElementById("radio").src = 'https://airhlspush.pc.cdn.bitgravity.com/httppush/hlspbaudio026/hlspbaudio026_Auto.m3u8';
+    document.getElementById("radio").src = vb_src;
     document.getElementById("mark").innerHTML = '<img style="float:left" src="'+ in_flag_img + '" alt="flag" width="180" height="110"><marquee style="font-size:60px;text-align:center;" behavior="slide" loop="1" width="80%" direction="up" height="100px"><b>ವಿವಿಧ ಭಾರತಿ</b></marquee>'
     playButton();
     radioStation('off');
     break;
+    
   case 'toggle':
     // code block
     if (document.getElementById("spin").style.color == "red")
@@ -594,21 +644,25 @@ switch(text){
         radioStation('off');
       }
     break;
+
   case 'tower':
     // code block
     tower += 1;
     openCode(tower,fm,akashvani);
     break;
+
   case 'fm':
     // code block
     fm += 1;
     openCode(tower,fm,akashvani);
     break;
+
   case 'akashvani':
     // code block
     akashvani += 1;
     openCode(tower,fm,akashvani);
     break;
+
   case 'showsocial':
     // code block
     var x = document.getElementById("tablesocial");
@@ -616,69 +670,79 @@ switch(text){
       x.style.display = "inline-block";
     } else { x.style.display = "none"; }
     break;
+
   case 'note':
     // code block
     localStorage.setItem('note',document.getElementById("note").value);
     document.getElementById("note").value = localStorage.getItem('note');
     break;
+
   case 'kissantv':
-    // code block
+    //Kisan_tv_src = src.src.Kisan;
     document.getElementById("weather").style.display = "none";
     document.getElementById("market").style.display = "none";
-    document.getElementById("tv").pause();
-    document.getElementById("tv").style.display = "none";
+    document.getElementById("chandana").contentWindow.postMessage(JSON.stringify({ event: 'command', func: 'stopVideo' }), '*');
+    document.getElementById("chandana").style.display = "none";
+    document.getElementById("mm").style.display = "none";
     document.getElementById("radio").pause();
     var xx = document.getElementById("kissan");
+    //src="https://www.youtube.com/embed/QBIm21KAqqA?autoplay=1&enablejsapi=1"
+    xx.src = "https://www.youtube.com/embed/" + Kisan_tv_src + "?autoplay=1&enablejsapi=1";
     if (xx.style.display == "none") {
       xx.style.display = "block";
       xx.contentWindow.postMessage(JSON.stringify({ event: 'command', func: 'playVideo' }), '*');
-      radioStation('Kissan');
-
+      radioStation("Kissan");
     } else {
       xx.contentWindow.postMessage(JSON.stringify({ event: 'command', func: 'stopVideo' }), '*');
       xx.style.display = "none";
       radioStation('off');}
     break;
+    
   case 'chandanatv':
-    // code block
     document.getElementById("weather").style.display = "none";
     document.getElementById("market").style.display = "none";
     document.getElementById("kissan").contentWindow.postMessage(JSON.stringify({ event: 'command', func: 'stopVideo' }), '*');
     document.getElementById("kissan").style.display = "none";
-    document.getElementById("tv").play();
     document.getElementById("radio").pause();
-    var x = document.getElementById("tv");
-    if (x.style.display == "none") {
-      x.style.display = "block"; radioStation('chandana');
-    } else { x.style.display = "none"; x.pause();radioStation('off');}
+    var xx = document.getElementById("chandana");
+    if (xx.style.display == "none") {
+      xx.style.display = "block";
+      document.getElementById("mm").style.display = "block";
+      xx.contentWindow.postMessage(JSON.stringify({ event: 'command', func: 'playVideo' }), '*');
+      radioStation("Chandana");
+    } else {
+      document.getElementById("mm").style.display = "none";
+      xx.contentWindow.postMessage(JSON.stringify({ event: 'command', func: 'stopVideo' }), '*');
+      xx.style.display = "none";
+      radioStation('off');}
     break;
+
   case 'market':
-    // code block
     document.getElementById("weather").style.display = "none";
-    document.getElementById("tv").pause();
-    document.getElementById("tv").style.display = "none";
     document.getElementById("kissan").contentWindow.postMessage(JSON.stringify({ event: 'command', func: 'stopVideo' }), '*');
     document.getElementById("kissan").style.display = "none";
+    document.getElementById("chandana").contentWindow.postMessage(JSON.stringify({ event: 'command', func: 'stopVideo' }), '*');
+    document.getElementById("chandana").style.display = "none";
     radioStation('off');
     var x = document.getElementById("market");
     if (x.style.display == "none") {
       x.style.display = "block";
     } else { x.style.display = "none"; }
     break;
+
   case 'loadweatherimage':
-    // code block
     document.getElementById("imageloading").style.display = "none";
     document.getElementById("weather").style.visibility = "visible";
     radioStation('off');
     break;
+
   case 'weather':
-    // code block
     document.getElementById("imageloading").style.display = "block";
     document.getElementById("imageloading").innerHTML = "ಹವಾಮಾನ ಚಿತ್ರದ ಡೇಟಾವನ್ನು ಪಡೆಯಲಾಗುತ್ತಿದೆ";
     document.getElementById("weather").style.display = "block";
     document.getElementById("market").style.display = "none";
-    document.getElementById("tv").pause();
-    document.getElementById("tv").style.display = "none";
+    document.getElementById("chandana").contentWindow.postMessage(JSON.stringify({ event: 'command', func: 'stopVideo' }), '*');
+    document.getElementById("chandana").style.display = "none";
     document.getElementById("kissan").contentWindow.postMessage(JSON.stringify({ event: 'command', func: 'stopVideo' }), '*');
     document.getElementById("kissan").style.display = "none";
     document.getElementById("weather").style.visibility = "hidden";
@@ -696,37 +760,52 @@ switch(text){
     break;
 
   case 'countapi':
-    // code block
     alert("ನೀವು "+n+" ಬಾರಿ ವೀಕ್ಷಿಸಿದ್ದೀರಿ. \nಒಟ್ಟು "+countapi+" ಜನರು ವೀಕ್ಷಿಸಿದ್ದಾರೆ.");
     break;
 
   case 'livecount':
-    // code block
-    alert("ನಿರ್ಮಾಣ ಹಂತದಲ್ಲಿದೆ.");
+    alert("😂😂😂");
     break;
 
   case 'likecount':
-    // code block
-    alert("ನಿರ್ಮಾಣ ಹಂತದಲ್ಲಿದೆ");
+    alert("😂😂😂");
     break;
 
   case 'likeme':
-    // code block
-    alert("ಇಷ್ಟಪಟ್ಟಿದ್ದಕ್ಕೆ ಧನ್ಯವಾದಗಳು");
+    if (selected_city !== '') { 
+        incLikeCount(selected_city); 
+        alert("ಇಷ್ಟಪಟ್ಟಿದ್ದಕ್ಕೆ ಧನ್ಯವಾದಗಳು");
+        fetchLikeCount();
+    } else { 
+        alert("ದಯವಿಟ್ಟು ರೇಡಿಯೋ ಚಾನೆಲ್ ಆಯ್ಕೆಮಾಡಿ"); 
+      }
     break;
 
   default:
-    // code block
     alert(text);
    }
 }
+//----------------------------------------------------------------
+
+
+// ================Testing========================
+
+
+
+
+
+
+// ================Testing========================
+
+
+//----------------------------------------------------------------
 
 // Function Play Button
 function playButton(){
   document.getElementById("spin").style.color = "green";
   document.getElementById("spin").className = "fa fa-solid fa-power-off fa-spin fa-fw";
-  document.getElementById("tv").pause();
-  document.getElementById("tv").style.display = "none";
+  //document.getElementById("chandana").pause();
+  document.getElementById("chandana").style.display = "none";
   document.getElementById("kissan").contentWindow.postMessage(JSON.stringify({ event: 'command', func: 'stopVideo' }), '*');
   document.getElementById("kissan").style.display = "none";
 }
@@ -820,7 +899,7 @@ setInterval(function(){
   for( var i=0;i<d.getDate().toString().length;i++){de += kaNo[d.getDate().toString()[i]];}
   for( var i=0;i<d.getFullYear().toString().length;i++){yr += kaNo[d.getFullYear().toString()[i]];}
   document.getElementById('time').innerHTML = "ಆಲ್ ಇಂಡಿಯಾ ರೇಡಿಯೋ ಆಕಾಶವಾಣಿ ಕರ್ನಾಟಕ. [ALL INDIA RADIO AKASHVANI KARNATAKA]<br>" + weekday[d.getDay()] + ', ' + "  " + month[d.getMonth()] + "  " + de + ',' + "  " + yr + "  [" + k + "  " + ampm[kt[1]] +"]";
-}, 100);
+}, 1000);
 //------------------------------------------------------------
 
 
@@ -849,7 +928,9 @@ function startTower(){
 //----------------------------------------------------------------
 
 
+//-------------------------------------------------------------------
 //------------------------Audio Player Event Listners------------
+//-------------------------------------------------------------------
 var radio = document.getElementById("radio");
 
 radio.addEventListener("play", function() {
@@ -872,10 +953,14 @@ radio.addEventListener("error", function() {
 radio.addEventListener("timeupdate", function() {
   document.getElementById('currenttime').innerHTML = formatSecondsAsTime(Math.floor(this.currentTime).toString());
 });
+//-------------------------------------------------------------------
+//-------------------------------------------------------------------
 
 
 
+//-------------------------------------------------------------------
 //-------------Seconds To Time--------------------------------------
+//-------------------------------------------------------------------
 
 function formatSecondsAsTime(secs, format) {
   var hr  = Math.floor(secs / 3600);
@@ -887,6 +972,145 @@ function formatSecondsAsTime(secs, format) {
   return hr + ':' + min + ':' + sec;
 }
 //-------------------------------------------------------------------
+//-------------------------------------------------------------------
+
+
+//-------------------------------------------------------------------
+//-----------------Fetch City Like Count----------------------------------------
+//-------------------------------------------------------------------
+let selected_city = '';
+let livecount = document.getElementById("livecount");
+var uid = "uid" + Math.random().toString(16).slice(2);
+
+function getLikecount({ Bangalore, Bhadravati, Chitradurga, Dharwad, Hassan, Hospet, Kalaburagi, Karwar, Madikeri, Mangalore, Mysore, Raichur, Vijayapura }) {
+    lc = document.getElementById("likecount");
+    if (selected_city === 'Hassan'){ lc.innerHTML = Hassan ; }
+    if (selected_city === 'Bangalore'){ lc.innerHTML = Bangalore ; }
+    if (selected_city === 'Bhadravati'){ lc.innerHTML = Bhadravati ; }
+    if (selected_city === 'Karwar'){ lc.innerHTML = Karwar ; }
+    if (selected_city === 'Dharwad'){ lc.innerHTML = Dharwad ; }
+    if (selected_city === 'Hospet'){ lc.innerHTML = Hospet ; }
+    if (selected_city === 'Mangalore'){ lc.innerHTML = Mangalore ; }
+    if (selected_city === 'Vijayapura'){ lc.innerHTML = Vijayapura ; }
+    if (selected_city === 'Kalaburagi'){ lc.innerHTML = Kalaburagi ; }
+    if (selected_city === 'Chitradurga'){ lc.innerHTML = Chitradurga ; }
+    if (selected_city === 'Raichur'){ lc.innerHTML = Raichur ; }
+    if (selected_city === 'Madikeri'){ lc.innerHTML = Madikeri ; }
+    if (selected_city === 'Mysore'){ lc.innerHTML = Mysore ; }
+    if (selected_city === "" ){ lc.innerHTML = '<i id="livecount"><s>1234567890</s></i>'; }
+}
+
+function fetchLikeCount(){
+    let script = document.createElement('script');
+    script.src = "https://karadio-1-j1796164.deta.app/detabase/js?callback=getLikecount" + "&c=" + Math.floor(Math.random()* 10000000) ;
+    document.body.append(script);
+}
+
+function incLikeCount(city){
+    let script = document.createElement('script');
+    script.src = "https://karadio-1-j1796164.deta.app/detabase/js?callback=incLikecount" + "&city=" + city + "&c=" + Math.floor(Math.random()* 10000000) ;
+    document.body.append(script);
+}
+//-----------------Fetch City Like Count End----------------------------------------
+//-------------------------------------------------------------------
+
+
+//-------------------------------------------------------------------
+//-----------------Fetch City Live Count----------------------------------------
+//-------------------------------------------------------------------
+function getLivecount({live}){
+    livecount.innerHTML = live;
+}
+
+function getLiveCount(city){
+    let script = document.createElement('script');
+    script.src = "https://karadio-1-j1796164.deta.app/detabase/js?callback=getLivecount" + "&city=" + city + "&uid=" + uid + "&c=" + Math.floor(Math.random()* 10000000) ;
+    document.body.append(script);
+}
+
+
+live = setInterval(startLive,55000);
+
+function startLive(){
+    if (selected_city === ''){
+        livecount.innerHTML = '<i id="livecount"><s>1234567890</s></i>';
+      } else {
+        //livecount.innerHTML = selected_city;
+        getLiveCount(selected_city);
+      }
+}
+//-----------------Fetch City Live Count End----------------------------------------
+//-------------------------------------------------------------------
+
+//----------------------------------------------------------------
+//------------------manniena makkalu dd chandana------------------
+//----------------------------------------------------------------
+let script = document.createElement('script');
+//script.src = "https://akashvani.deta.dev/js?callback=getmm" + "&c=" + Math.floor(Math.random()* 10000000) ;
+//https://karadio-1-j1796164.deta.app/detabase/js?callback=getmm
+
+script.src = "https://karadio-1-j1796164.deta.app/detabase/js?callback=getmm" + "&c=" + Math.floor(Math.random()* 10000000) ;
+document.body.append(script);
+
+function getmm({mm}){
+        
+    var select_mm = document.getElementById("mm");
+
+    /*
+    // clearing options
+    var i, L = select_mm.options.length - 1;
+    for(i = L; i >= 0; i--) {
+        select_mm.remove(i);
+        }
+    */
+            
+    // creating options
+    for (i in mm){
+        var opt = document.createElement('option');
+        opt.value = "https://www.youtube.com/embed/" + mm[i]["url"] + "?autoplay=1&enablejsapi=1" ;
+        opt.innerHTML = mm[i]["title"];
+        select_mm.appendChild(opt);
+        }
+}
+
+function mmPlay(src){ document.getElementById("chandana").src = src; }
+//----------------------------------------------------------------
+//----------------------------------------------------------------
+
+//-------------------------------------------------------------------
+//-----------------Fetch City Audio Source----------------------------------------
+//-------------------------------------------------------------------
+function getsrc(src){
+    Bangalore_src = src.src.Bangalore;
+    Bhadravati_src = src.src.Bhadravati;
+    Chitradurga_src = src.src.Chitradurga;
+    Dharwad_src = src.src.Dharwad;
+    Hassan_src = src.src.Hassan;
+    Hospet_src = src.src.Hospet;
+    Kalaburagi_src = src.src.Kalaburagi;
+    Karwar_src = src.src.Karwar;
+    Madikeri_src = src.src.Madikeri;
+    Mangalore_src = src.src.Mangalore;
+    Mysore_src = src.src.Mysore;
+    Raichur_src = src.src.Raichur;
+    Vijayapura_src = src.src.Vijayapura;
+
+    amrutvarshini_src = src.src.amrutvarshini;
+    vb_src = src.src.vb;
+    kaamanbilu_src = src.src.kaamanbilu;
+    Bellari_src = src.src.Bellari;
+    Kisan_tv_src = src.src.Kisan;
+}
+
+function fetchSource(){
+    let script = document.createElement('script');
+    script.src = "https://karadio-1-j1796164.deta.app/detabase/js?callback=getsrc" + "&c=" + Math.floor(Math.random()* 10000000) ;
+    document.body.append(script);
+}
+fetchSource();
+//----------------------------------------------------------------
+//----------------------------------------------------------------
+
 
 //-------------------------------------------------------------------
 function radioStation(text) {
@@ -911,7 +1135,7 @@ switch(text) {
     //document.getElementById("rayachuru").style.display="none";
     break;
 
-  case 'Hassan':
+  case "Hassan":
     //code block
     document.getElementById("twHassan").style.display="block";
     document.getElementById("twMysore").style.display="none";
@@ -929,6 +1153,15 @@ switch(text) {
     //document.getElementById("vijapur").style.display="none";
     //document.getElementById("chitradurga").style.display="none";
     //document.getElementById("rayachuru").style.display="none";
+
+    //=================Live Count===================
+    //document.getElementById("livecount").innerHTML="Hsn Live";
+    //=================Live Count===================
+
+    //=================Like Count===================
+    selected_city = "Hassan";
+    fetchLikeCount();
+    //=================Like Count===================
     break;
 
   case "Banglore":
@@ -949,6 +1182,13 @@ switch(text) {
     //document.getElementById("vijapur").style.display="none";
     //document.getElementById("chitradurga").style.display="none";
     //document.getElementById("rayachuru").style.display="none";
+
+    //=================Live Count===================
+    //=================Live Count===================
+    //=================Like Count===================
+    selected_city = "Bangalore";
+    fetchLikeCount();
+    //=================Like Count===================
     break;
 
   case "Bhadravathi":
@@ -969,6 +1209,13 @@ switch(text) {
     //document.getElementById("vijapur").style.display="none";
     //document.getElementById("chitradurga").style.display="none";
     //document.getElementById("rayachuru").style.display="none";
+
+    //=================Live Count===================
+    //=================Live Count===================
+    //=================Like Count===================
+    selected_city = "Bhadravati";
+    fetchLikeCount();
+    //=================Like Count===================
     break;
 
   case "Karwar":
@@ -989,6 +1236,13 @@ switch(text) {
     //document.getElementById("vijapur").style.display="none";
     //document.getElementById("chitradurga").style.display="none";
     //document.getElementById("rayachuru").style.display="none";
+
+    //=================Live Count===================
+    //=================Live Count===================
+    //=================Like Count===================
+    selected_city = "Karwar";
+    fetchLikeCount();
+    //=================Like Count===================
     break;
 
   case "Dharwad":
@@ -1009,6 +1263,13 @@ switch(text) {
     //document.getElementById("vijapur").style.display="none";
     //document.getElementById("chitradurga").style.display="none";
     //document.getElementById("rayachuru").style.display="none";
+
+    //=================Live Count===================
+    //=================Live Count===================
+    //=================Like Count===================
+    selected_city = "Dharwad";
+    fetchLikeCount();
+    //=================Like Count===================
     break;
 
   case "Hospet":
@@ -1029,6 +1290,13 @@ switch(text) {
     //document.getElementById("vijapur").style.display="none";
     //document.getElementById("chitradurga").style.display="none";
     //document.getElementById("rayachuru").style.display="none";
+
+    //=================Live Count===================
+    //=================Live Count===================
+    //=================Like Count===================
+    selected_city = "Hospet";
+    fetchLikeCount();
+    //=================Like Count===================
     break;
 
   case "Mangalore":
@@ -1049,6 +1317,13 @@ switch(text) {
     //document.getElementById("vijapur").style.display="none";
     //document.getElementById("chitradurga").style.display="none";
     //document.getElementById("rayachuru").style.display="none";
+
+    //=================Live Count===================
+    //=================Live Count===================
+    //=================Like Count===================
+    selected_city = "Mangalore";
+    fetchLikeCount();
+    //=================Like Count===================
     break;
 
   case "Vijayapura":
@@ -1069,6 +1344,13 @@ switch(text) {
     //document.getElementById("vijayapura").style.display="block";
     //document.getElementById("chitradurga").style.display="none";
     //document.getElementById("rayachuru").style.display="none";
+
+    //=================Live Count===================
+    //=================Live Count===================
+    //=================Like Count===================
+    selected_city = "Vijayapura";
+    fetchLikeCount();
+    //=================Like Count===================
     break;
 
   case "Kalburgi":
@@ -1089,6 +1371,13 @@ switch(text) {
     //document.getElementById("vijapur").style.display="none";
     //document.getElementById("chitradurga").style.display="none";
     //document.getElementById("rayachuru").style.display="none";
+
+    //=================Live Count===================
+    //=================Live Count===================
+    //=================Like Count===================
+    selected_city = "Kalaburagi";
+    fetchLikeCount();
+    //=================Like Count===================
     break;
 
   case "Chitradurga":
@@ -1109,6 +1398,13 @@ switch(text) {
     //document.getElementById("vijapur").style.display="none";
     //document.getElementById("chitradurga").style.display="block";
     //document.getElementById("rayachuru").style.display="none";
+
+    //=================Live Count===================
+    //=================Live Count===================
+    //=================Like Count===================
+    selected_city = "Chitradurga";
+    fetchLikeCount();
+    //=================Like Count===================
     break;
 
   case "Raichur":
@@ -1129,6 +1425,13 @@ switch(text) {
     //document.getElementById("vijapur").style.display="none";
     //document.getElementById("chitradurga").style.display="none";
     //document.getElementById("rayachuru").style.display="block";
+
+    //=================Live Count===================
+    //=================Live Count===================
+    //=================Like Count===================
+    selected_city = "Raichur";
+    fetchLikeCount();
+    //=================Like Count===================
     break;
 
   case "Madikeri":
@@ -1149,6 +1452,13 @@ switch(text) {
     //document.getElementById("vijapur").style.display="none";
     //document.getElementById("chitradurga").style.display="none";
     //document.getElementById("rayachuru").style.display="none";
+
+    //=================Live Count===================
+    //=================Live Count===================
+    //=================Like Count===================
+    selected_city = "Madikeri";
+    fetchLikeCount();
+    //=================Like Count===================
     break;
 
   case "Mysore":
@@ -1169,6 +1479,13 @@ switch(text) {
     //document.getElementById("vijapur").style.display="none";
     //document.getElementById("chitradurga").style.display="none";
     //document.getElementById("rayachuru").style.display="none";
+
+    //=================Live Count===================
+    //=================Live Count===================
+    //=================Like Count===================
+    selected_city = "Mysore";
+    fetchLikeCount();
+    //=================Like Count===================
     break;
 
   case "Kissan":
@@ -1189,9 +1506,11 @@ switch(text) {
     //document.getElementById("vijapur").style.display="none";
     //document.getElementById("chitradurga").style.display="none";
     //document.getElementById("rayachuru").style.display="none";
+
+    selected_city = "";
     break;
 
-  case "chandana":
+  case "Chandana":
     //code block
     document.getElementById("twHassan").style.display="none";
     document.getElementById("twMysore").style.display="none";
@@ -1209,6 +1528,8 @@ switch(text) {
     //document.getElementById("vijapur").style.display="none";
     //document.getElementById("chitradurga").style.display="none";
     //document.getElementById("rayachuru").style.display="none";
+
+    selected_city = "";
     break;
   }
 }

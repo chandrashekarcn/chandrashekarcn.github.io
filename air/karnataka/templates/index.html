@@ -176,7 +176,8 @@ footer {
 </table>
 
 <!--------------------------------------------------------------->
-<!-- Pending dev ಜಲಾಶಯದ ನೀರಿನ ಮಟ್ಟ prajavani archiverecord <hr>-->
+<!-- Pending dev ಜಲಾಶಯದ ನೀರಿನ ಮಟ್ಟ prajavani archiverecord -->
+<!-- gold,silver,petrol,disel,gas price  chat/comments   -->
 <!-------------contact and social media links-------------------->
 
 <table id="tablesocial" style="display:none"">
@@ -374,6 +375,8 @@ https://api.countapi.xyz/hit/chandrashekarcn.github.io/index
 
 <!----------------------------------------------------------------->
 
+<br><div id="log"></div><br>
+
 <!-----------------Site And Developer Info------------------------->
 <div style="display:none"><pre>
 <img id="cnc" src="" alt="Chandrashekar CN" width="150" height="150" style="float:left">
@@ -404,6 +407,7 @@ https://api.countapi.xyz/hit/chandrashekarcn.github.io/index
 <!-- ನಿರಾಕರಿಸಲಾಗಿದೆ -->
 </pre>
 </div>
+
 <!----------------------------------------------------------------->
 
 <!----------------Including Radio.js------------------------------->
@@ -687,7 +691,7 @@ switch(text){
     document.getElementById("radio").pause();
     var xx = document.getElementById("kissan");
     //src="https://www.youtube.com/embed/QBIm21KAqqA?autoplay=1&enablejsapi=1"
-    xx.src = "https://www.youtube.com/embed/" + Kisan_tv_src + "?autoplay=1&enablejsapi=1";
+    //xx.src = "https://www.youtube.com/embed/" + Kisan_tv_src + "?autoplay=1&enablejsapi=1";
     if (xx.style.display == "none") {
       xx.style.display = "block";
       xx.contentWindow.postMessage(JSON.stringify({ event: 'command', func: 'playVideo' }), '*');
@@ -789,10 +793,11 @@ switch(text){
 
 
 // ================Testing========================
+/*
+water level
+https://www.tnagrisnet.tn.gov.in/ARS/home/reservoir
 
-
-
-
+*/
 
 
 // ================Testing========================
@@ -1100,6 +1105,11 @@ function getsrc(src){
     kaamanbilu_src = src.src.kaamanbilu;
     Bellari_src = src.src.Bellari;
     Kisan_tv_src = src.src.Kisan;
+    var xx = document.getElementById("kissan");
+    //src="https://www.youtube.com/embed/QBIm21KAqqA?autoplay=1&enablejsapi=1"
+    xx.src = "https://www.youtube.com/embed/" + Kisan_tv_src + "?autoplay=1&enablejsapi=1";
+    document.getElementById("log").innerHTML = Bellari_src;
+    
 }
 
 function fetchSource(){
